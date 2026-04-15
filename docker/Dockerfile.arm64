@@ -174,7 +174,7 @@ RUN echo "export C_INCLUDE_PATH=$C_INCLUDE_PATH:/opt/venv/lib/python3.12/site-pa
 RUN mkdir -p /var/run/agent && \
     chmod 777 /var/run/agent
 
-RUN git clone -b feature-first-update https://github.com/ROBOTIS-GIT/cyclo_manager.git /opt/cyclo_manager
+RUN git clone https://github.com/ROBOTIS-GIT/cyclo_manager.git /opt/cyclo_manager
 
 ENV PYTHONPATH=/opt/cyclo_manager:${PYTHONPATH}
 
