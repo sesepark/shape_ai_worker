@@ -20,7 +20,6 @@ COPY --from=librealsense /opt/librealsense /usr/local/
 COPY --from=librealsense /usr/local/lib/python3.12/dist-packages/pyrealsense2 /usr/local/lib/python3.12/dist-packages/pyrealsense2
 COPY --from=librealsense /usr/src/librealsense/config/99-realsense-libusb.rules /etc/udev/rules.d/
 COPY --from=librealsense /usr/src/librealsense/config/99-realsense-d4xx-mipi-dfu.rules /etc/udev/rules.d/
-# Do not use $PYTHONPATH here — it is unset at first ENV parse (BuildKit UndefinedVar warning).
 ENV PYTHONPATH=/usr/local/lib
 
 # Set environment variables
