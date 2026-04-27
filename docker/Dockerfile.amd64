@@ -55,7 +55,6 @@ RUN cd ${COLCON_WS} && \
     apt-get install -y ros-${ROS_DISTRO}-rmw-zenoh-cpp && \
     rosdep update && \
     rosdep install -i --from-path src --rosdistro $ROS_DISTRO --skip-keys="librealsense2" -y && \
-    apt-get upgrade -y && \
     rm -rf /var/lib/apt/lists/*
 
 RUN bash -c "source /opt/ros/${ROS_DISTRO}/setup.bash && \
