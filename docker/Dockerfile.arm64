@@ -1,4 +1,4 @@
-FROM robotis/ros:jazzy-ros-base-torch2.7.0-cuda12.8.0-v2 AS librealsense-builder
+FROM robotis/ros:jazzy-ros-base-torch2.7.0-cuda12.8.0-v3 AS librealsense-builder
 
 ARG TARGETARCH
 
@@ -59,7 +59,7 @@ RUN cd /usr/src/librealsense \
 
 RUN cp -r /opt/venv/lib/python3.12/site-packages/pyrealsense2 /usr/local/lib/python3.12/dist-packages/
 
-FROM robotis/ros:jazzy-ros-base-torch2.7.0-cuda12.8.0-v2 AS ai-worker
+FROM robotis/ros:jazzy-ros-base-torch2.7.0-cuda12.8.0-v3 AS ai-worker
 
 ARG TARGETARCH
 ARG S6_OVERLAY_VERSION=3.2.1.0
