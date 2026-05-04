@@ -2,6 +2,11 @@
 Changelog for package ffw_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.3.2 (2026-05-04)
+------------------
+* Extended neck downward angle by 12 degrees
+* Contributors: Sungho Woo
+
 1.2.2 (2026-04-27)
 ------------------
 * None
