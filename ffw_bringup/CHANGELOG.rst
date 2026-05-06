@@ -2,9 +2,9 @@
 Changelog for package ffw_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.3.2 (2026-05-04)
+1.3.0 (2026-05-04)
 ------------------
-* Bumped package version to 1.3.2
+* Bumped package version to 1.3.0
 
 1.2.2 (2026-04-27)
 ------------------
