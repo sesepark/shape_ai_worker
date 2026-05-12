@@ -2,6 +2,11 @@
 Changelog for package ffw
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.3.1 (2026-05-12)
+------------------
+* Added dual_laser_merger for SH5
+* Contributors: Howon Kim
+
 1.3.0 (2026-05-04)
 ------------------
 * Improved 3-wheel swerve steering limit using flip logic

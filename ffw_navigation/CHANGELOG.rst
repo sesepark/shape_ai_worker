@@ -4,7 +4,7 @@ Changelog for package ffw_navigation
 
 1.3.1 (2026-05-12)
 ------------------
-* Fixed the default RViz view.
+* None
 
 1.3.0 (2026-05-04)
 ------------------
