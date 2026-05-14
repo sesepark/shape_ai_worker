@@ -2,7 +2,7 @@
 Changelog for package ffw_joint_trajectory_command_broadcaster
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.3.1 (2026-05-12)
+1.3.1 (2026-05-14)
 ------------------
 * None
 

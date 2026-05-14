@@ -2,10 +2,11 @@
 Changelog for package ffw
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.3.1 (2026-05-12)
+1.3.1 (2026-05-14)
 ------------------
 * Added dual_laser_merger for SH5
-* Contributors: Howon Kim
+* Added ffw_sg2_pack launch file
+* Contributors: Howon Kim, Hyungyu Kim
 
 1.3.0 (2026-05-04)
 ------------------
