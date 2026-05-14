@@ -7,6 +7,7 @@ Changelog for package ffw_bringup
 * Added dual_laser_merger for SH5
 * Added unified ffw_pack.launch file
 * Removed individual pack launch files
+* Add pack position yaml files in each robot type config folder
 * Contributors: Howon Kim, Hyungyu Kim
 
 1.3.0 (2026-05-04)
