@@ -17,7 +17,7 @@
 # Authors: Sungho Woo, Woojin Wie, Wonho Yun
 
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, GroupAction
+from launch.actions import DeclareLaunchArgument, GroupAction, LogInfo
 from launch.substitutions import Command, FindExecutable, LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node, PushRosNamespace
 from launch_ros.substitutions import FindPackageShare
@@ -30,9 +30,15 @@ def generate_launch_description():
             default_value='ffw_lg2_leader.urdf.xacro',
             description='URDF/XACRO file for the robot model.',
         ),
+        DeclareLaunchArgument(
+            'leader_controller_config',
+            default_value='ffw_lg2_leader_ai_hardware_controller.yaml',
+            description='Controller YAML file for the LG2 Leader.',
+        ),
     ]
 
     description_file = LaunchConfiguration('description_file')
+    leader_controller_config = LaunchConfiguration('leader_controller_config')
 
     # Robot controllers config file path
     robot_controllers = PathJoinSubstitution(
@@ -40,7 +46,7 @@ def generate_launch_description():
             FindPackageShare('ffw_bringup'),
             'config',
             'ffw_lg2_leader',
-            'ffw_lg2_leader_ai_hardware_controller.yaml',
+            leader_controller_config,
         ]
     )
 
@@ -87,6 +93,7 @@ def generate_launch_description():
     leader_with_namespace = GroupAction(
         actions=[
             PushRosNamespace('leader'),
+            LogInfo(msg=['LG2 Leader controller config: ', leader_controller_config]),
             control_node,
             robot_controller_spawner,
             robot_state_publisher_node,
